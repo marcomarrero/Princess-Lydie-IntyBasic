@@ -1,0 +1,13 @@
+This is Princess Lydie source code and object code.
+
+It will NOT compile as-is, I did not include a tool I made that "multiplies" code from: mSnake0_A.bas to mSnake0_E.bas, and mSpinner0_B.bas.
+The reason is that IntyBasic array handling is so slow, it's useless. I coded for one virtual enemy, and the tool duplicates for each of the 6 enemies.
+
+The original code also had better background collision detection, but the CP1610 CPU is just too slow.
+
+The code updates sprites in one frame, then background cards in the next one. Intellivision sprites are 1 frame behind. When running in easy mode in NTCS it's skipping 1 out of 6 frames and the sprite/card effect is very noticeable.
+
+There is a separate tool to create data for levels, which is included in a different repository. I intentionally RLE compressed data, because I am already having problems due to the enormous code size.
+
+  - Marco A. Marrero
+ 
